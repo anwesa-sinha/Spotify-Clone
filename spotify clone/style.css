@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 91.2vh;
+    position: relative;
+    background-color: black;
+    background-image: url('bg_img.png');
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    
+}
+
+.left-container{
+    width: 100%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.album{
+    text-align: center;
+    justify-content: center;
+}
+
+.albumItem{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.albumItem img{
+    width: 130px;
+}
+
+.albumItem h3{
+    padding: 8px 0;
+    text-align: center;
+    font-size: 1.17rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.albumItem p{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    color: rgb(168, 165, 165);
+}
+
+.playlists{
+    text-align: center;
+    justify-content: center;
+}
+
+.playlists h1{
+    text-align: left;
+}
+
+.playlistItem{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    float: left;
+}
+
+.playlistItem img{
+    width: 130px;
+}
+
+.playlistItem h3{
+    padding: 8px 0;
+    text-align: center;
+    font-size: 1.17rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songList{
+    width: 60%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    width: 90%;
+    margin: 20px 0;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songItem img{
+   width: 70px;
+   height: 70px;
+   margin: 0 23px;
+}
+
+.artistName{
+    color: rgb(168, 165, 165);
+}
+
+.songItem i{
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.bottom{
+    position: absolute;
+    height: 130px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    bottom: 0px;
+    display: flex;
+    
+}
+
+.bottomLeft{
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.bottomLeft img{
+    width: 120px;
+    display: inline-block;
+}
+
+.songInfo{
+    display: inline-block;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+.songInfo p{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    color: rgb(168, 165, 165);
+    padding: 8px 0;
+}
+
+.bottomCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0%;
+}
+
+#myProgressBar{
+    width: 65vw;
+    cursor: pointer;
+}
+
+.icons{
+    font-size: 2rem;
+    margin-top: 14px;
+    color: white;
+}
+
+.icons i{
+    cursor: pointer;
+    padding: 0px 40px;
+    color: white;
+}
+
+#playGif{
+    padding-top: 12px;
+    width: 540px;
+    height: 27px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.bottomRight{
+    width: 90px;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    font-size: 30px;
+    /* margin: 10px 30px; */
+}
